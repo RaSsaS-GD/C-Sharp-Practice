@@ -19,14 +19,7 @@ public class Number
     // My Implementation
     public long DigitalRoot(long n)
     {
-        if (n < 10)
-        {
-            return n;
-        }
-        else
-        {
-            return DigitalRoot(n.ToString().Select(c => long.Parse(c.ToString())).Sum());
-        }
+        return DigitalRoot(n.ToString().Select(c => long.Parse(c.ToString())).Sum());
     }
 
     // Bettter Implementation
